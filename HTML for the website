@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" type="text/css" href="sheetstyle.css">
+
+<title id="ticcc">Universal Core Website</title>
+</head>
+<body>
+
+    <h2> <a id="head" href="#home">Universal Core</a></h2>
+    <ul class="sticky">
+        <li>
+            <a id="signup" href="#signup"> Sign Up  </a>
+        </li>
+
+        <li >
+            <a id="rightalign" href="#login">Login</a>
+        </li>
+        <li>
+            <a href="#lmao">Contribute</a>
+        </li>
+        <li>
+            <a href="#lol">About Us</a>
+        </li>
+
+        <li>
+            <a href="#omg">Contact Us</a>
+        </li>
+    </ul>
+
+
+
+
+    <div class="main" id="lol">
+        <p> <center> About Us  </center> </p>
+
+
+    </div>
+
+
+
+<div class="main" id="lmao">
+
+    <p> <center> Contribute </center> </p>
+
+</div>
+
+
+
+
+<div class="main" id="omg">
+
+    <p> <center> Contact Us </center> </p>
+
+</div>
+
+
+
+
+
+</body>
+</html>
