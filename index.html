@@ -73,7 +73,7 @@ body {font-family: "Lato", sans-serif}
   -->
 
   <!-- The AboutUs Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="AboutUs">
+  <div style="background-color:#3f511c" class="w3-container w3-content w3-center w3-opacity w3-padding-64" style="max-width:800px" id="AboutUs">
     <h2 class="w3-wide">Universal Core</h2>
     <p class="w3-opacity"><i>Knowledge for the Future</i></p>
     <p class="w3-justify"> <center> Universal Core is a non-profit organization that gets high school students
@@ -104,14 +104,23 @@ body {font-family: "Lato", sans-serif}
       <p class="w3-opacity w3-center"><i>Book Your Class</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding"> Students </li>
+        <li class="w3-padding" > Students </li>
       </ul>
         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
             <div class="w3-third w3-margin-bottom">
 
               <div class="w3-container w3-white">
-                <p><b>Class 1</b></p>
-                <p class="w3-opacity">Date</p>
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
+                <p>Class Description, Location, etc</p>
+
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+
+             <div class="w3-container w3-white">
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
                 <p>Class Description, Location, etc</p>
 
               </div>
@@ -119,17 +128,8 @@ body {font-family: "Lato", sans-serif}
             <div class="w3-third w3-margin-bottom">
 
               <div class="w3-container w3-white">
-                <p><b>Class 2</b></p>
-                <p class="w3-opacity">Date</p>
-                <p>Class Description, Location, etc</p>
-
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-
-              <div class="w3-container w3-white">
-                <p><b>Class 3</b></p>
-                <p class="w3-opacity">Date</p>
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
                 <p>Class Description, Location, etc</p>
 
               </div>
@@ -137,41 +137,15 @@ body {font-family: "Lato", sans-serif}
           </div>
 
 
-     <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom">
-
-               <div class="w3-container w3-white">
-                <p><b>Class 1</b></p>
-                <p class="w3-opacity">Date</p>
-                <p>Class Description, Location, etc</p>
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <div class="w3-container w3-white">
-                <p><b>Class 2</b></p>
-                <p class="w3-opacity">Date</p>
-                <p>Class Description, Location, etc</p>
-
-              </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-              <div class="w3-container w3-white">
-                <p><b>Class 3</b></p>
-                <p class="w3-opacity">Date</p>
-                <p>Class Description, Location, etc</p>
-              </div>
-            </div>
-          </div>
-
-         <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding"> Teachers </li>
+         <ul class="w3-ul w3-white w3-border w3-text-grey">
+        <li class="w3-padding" > Teachers </li>
       </ul>
         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
             <div class="w3-third w3-margin-bottom">
 
               <div class="w3-container w3-white">
-                <p><b>Class 1</b></p>
-                <p class="w3-opacity">Date</p>
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
                 <p>Class Description, Location, etc</p>
                 <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('createClass').style.display='block'; ">Join</button>
               </div>
@@ -179,17 +153,17 @@ body {font-family: "Lato", sans-serif}
             <div class="w3-third w3-margin-bottom">
 
               <div class="w3-container w3-white">
-                <p><b>Class 2</b></p>
-                <p class="w3-opacity">Date</p>
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
                 <p>Class Description, Location, etc</p>
                 <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('createClass').style.display='block'">Join</button>
               </div>
             </div>
             <div class="w3-third w3-margin-bottom">
 
-              <div class="w3-container w3-white">
-                <p><b>Class 3</b></p>
-                <p class="w3-opacity">Date</p>
+             <div class="w3-container w3-white">
+                <p><b>[Class Name Open]</b></p>
+                <p class="w3-opacity">{Date Open}</p>
                 <p>Class Description, Location, etc</p>
                 <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('createClass').style.display='block'">Join</button>
               </div>
@@ -207,9 +181,9 @@ body {font-family: "Lato", sans-serif}
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Join Class</h2>
       </header>
       <div class="w3-container">
-          <form method="POST" action="https://formspree.io/sandeshshrestha02@gmail.com">
+          <form method="POST" action="https://formspree.io/universalcore.requests@gmail.com">
               <p>Email:</p> <input class="w3-input w3-border" type="email" name="email" placeholder="Your email">
-              <p>Name:</p><input class="w3-input w3-border" type="name" name="name" placeholder="Your Name">
+              <p>Name:</p><input class="w3-input w3-border" type="" name="name" placeholder="Your Name">
               <p>Phone Number:</p><input class="w3-input w3-border" type="phone" placeholder="Phone Number">
               <p>Class Description:</p><input class="w3-input w3-border" type="text" placeholder="Description, Location, Date">
               <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit">Submit Class Request</button>
@@ -248,7 +222,6 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> Fremont, CA<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +1 510 510 5105<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: gmail@gmail.gmail<br>
       </div>
       <div class="w3-col m6">
@@ -274,11 +247,11 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p class="w3-medium">Powered by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">everything</a></p>
+<footer  style="background-color:#3f511c" class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+  <a style="color:#eaf2d9" href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a style="color:#eaf2d9" href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a style="color:#eaf2d9" href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p style="color:#eaf2d9" class="w3-medium">Powered by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">everything</a></p>
 </footer>
 
 <script>
