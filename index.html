@@ -211,11 +211,25 @@ body {font-family: "Lato", sans-serif}
         <input class="w3-input w3-border" type="text" placeholder="Name">
         <p><label><i class="fa fa-user"></i> Email Receipt</label></p>
         <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Join <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('joinClass').style.display='none'; document.getElementById('thankYouTicket').style.display='block'">Join <i class="fa fa-check"></i></button>
         <button class="w3-button w3-red w3-section" onclick="document.getElementById('joinClass').style.display='none'">Close <i class="fa fa-remove"></i></button>
       </div>
     </div>
   </div>
+
+
+<!-- Thank You Ticket -->
+<div id="thankYouTicket" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal w3-center w3-padding-32">
+            <h2 class="w3-wide"><i class="fa w3-margin-right"></i>Thanks</h2>
+        </header>
+        <div class="w3-container">
+            <p>thanks for playing lol heres ur free virus</p>
+           <button class="w3-button w3-red w3-section" onclick="document.getElementById('thankYouTicket').style.display='none';">Close <i class="fa fa-remove"></i></button>
+        </div>
+    </div>
+</div>
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="Contact">
@@ -282,6 +296,33 @@ function myFunction() {
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+function emailReceipt() {
+    var nodemailer = require('nodemailer');
+
+    var transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'sandeshshrestha02@gmail.com',
+        pass: 'Violin02s'
+      }
+    });
+
+    var mailOptions = {
+      from: 'sandeshshrestha02@gmail.com',
+      to: 'sandeshshrestha02@gmail.com',
+      subject: 'thanks for signing uo!',
+      text: 'This is a receipt, class number:'
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
 }
 
 // When the user clicks anywhere outside of the modal, close it
