@@ -306,32 +306,7 @@ function myFunction() {
   }
 }
 
-function emailReceipt() {
-    var nodemailer = require('nodemailer');
 
-    var transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'sandeshshrestha02@gmail.com',
-        pass: 'Violin02s'
-      }
-    });
-
-    var mailOptions = {
-      from: 'sandeshshrestha02@gmail.com',
-      to: 'sandeshshrestha02@gmail.com',
-      subject: 'thanks for signing uo!',
-      text: 'This is a receipt, class number:'
-    };
-
-    transporter.sendMail(mailOptions, function(error, info){
-      if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-    });
-}
 
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('joinClass');
